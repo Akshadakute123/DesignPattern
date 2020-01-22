@@ -1,0 +1,33 @@
+package Com.Bridgelabz.oops.commercialdata;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
+
+import com.Bridgelabz.oops.Inventory.Inventory;
+
+public class Commersialimethods 
+{
+  Company comp=new Company();
+  Customer custom =new Customer();
+  //Commersialimethods cm=new Commersialimethods ();
+   ObjectMapper objectmapper=new ObjectMapper();
+   File file1=new File("Company.json");
+   File file2=new File("Customer.json");
+   File file3=new File("Transaction.json");
+   
+   public List<Customer> readfile() throws JsonParseException, JsonMappingException, IOException {
+		List<Inventory> list = objectmapper.readValue(file1, new TypeReference<List<Customer>>() {
+		});
+		return list;
+   }
+    public void writecompanyFile()
+    {
+    	
+    }
+}

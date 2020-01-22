@@ -1,0 +1,11 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+public class Inventory 
+{
+   String name;
+   double price;
+   double weight;
+   
+	
+	
+}

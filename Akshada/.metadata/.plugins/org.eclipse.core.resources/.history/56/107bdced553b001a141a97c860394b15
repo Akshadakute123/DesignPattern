@@ -1,0 +1,31 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
+
+public class InventoryMain 
+{
+ public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException 
+ {
+	 InventoryImplementation im=new InventoryImplementation();
+	List<Inventory>list=im.readfile();
+	for (int i = 0; i < list.size(); i++)
+	{
+		System.out.println(list.get(0).getName());
+		System.out.println(list.get(i).getPrice()+list.get(i).getWeight());
+	}
+	
+	List<Inventory>list1=im.addinventory(list);
+	im.writeFile(list1);
+	List<Inventory>remove=im.removeInventory(list1);
+	im.writeFile(remove);
+	
+	
+}
+}

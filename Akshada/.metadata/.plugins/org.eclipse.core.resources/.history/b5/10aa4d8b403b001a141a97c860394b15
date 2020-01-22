@@ -1,0 +1,3 @@
+module OopsProject {
+	requires jackson.all;
+}

@@ -1,0 +1,55 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class AdressBookImplementation
+{
+	static Scanner scan=new Scanner(System.in);
+ static	FileWriter fw;
+  static String current_File;
+
+  public static void CreateNewFile()
+  {
+	  System.out.println("enter the file name ");
+	  String new_file=scan.next();
+	  current_File=AdressUtility.getCurrentPath(new_file);
+	   System.out.println(current_File);
+	  // String current=
+	
+	  
+  }
+  public static boolean CreateNewFile(String current_File) throws IOException
+  {
+	 File file=new File(current_File);
+
+		int flag = 0;
+		boolean b1 = file.exists();
+		if (b1)
+		{
+	System.out.println("File is Already Exist...please Enter another name");
+			flag = 0;
+		} else {
+			boolean b2 = file.createNewFile();
+			if (b2) {
+				fw = new FileWriter(file);
+				fw.write("[ ]");
+				fw.flush();
+				fw.close();
+          System.out.println("New Address Book has Created....");
+				flag = 1;
+			}
+		}
+		if (flag == 1) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+  
+}
+

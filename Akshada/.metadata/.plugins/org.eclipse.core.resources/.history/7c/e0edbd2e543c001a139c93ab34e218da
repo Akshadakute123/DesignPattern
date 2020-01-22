@@ -1,0 +1,13 @@
+package Com.Bridgelabz.oops.commercialdata;
+
+import java.time.LocalDateTime;
+
+public class Transaction 
+{
+   public String company_name;
+   public int number_of_companyshares;
+   public String customer_name;
+   public int no_of_customershares;
+   public LocalDateTime datetime;
+   
+}

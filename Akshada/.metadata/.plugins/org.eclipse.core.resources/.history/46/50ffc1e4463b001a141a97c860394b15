@@ -1,0 +1,37 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import java.util.Scanner;
+
+public class InventoryImplementation implements InventoryInterface
+{
+	Scanner sc=new Scanner(System.in);
+
+
+@Override
+public Inventory addinventory() {
+	 Inventory inventory=new Inventory();
+	  System.out.println("enter the name of product");
+	  inventory.setName(sc.next());
+	  System.out.println("enter the price");
+	  inventory.setPrice(sc.nextDouble());
+	  System.out.println("enter the weight");
+	  inventory.setWeight(sc.nextDouble());
+	return inventory;
+	  
+}
+
+@Override
+public Inventory totalWeight() {
+	// TODO Auto-generated method stub
+	return null;
+}
+@Override
+public Inventory totalPrice() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+
+  
+	
+}

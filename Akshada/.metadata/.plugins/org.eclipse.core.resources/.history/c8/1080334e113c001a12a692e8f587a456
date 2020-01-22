@@ -1,0 +1,18 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+public class AdressUtility
+{
+  static String path="/OopsProject/src/Com/BridgeLabz/Fellowship/Oops/AdressBook";
+   
+   public static String getExistingpath()
+   {
+	   return path;
+   }
+   public static String getCurrentPath(String new_file)
+   {
+	   String newpath=AdressUtility.getExistingpath();
+	   String a=newpath+new_file+".json";
+	return a;
+	   
+   }
+}

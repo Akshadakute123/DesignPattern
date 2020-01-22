@@ -1,0 +1,20 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class InventoryMain 
+{
+ public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException 
+ {
+	 ObjectMapper objectMapper = new ObjectMapper();
+	 File rice=new File("/home/admin1/eclipse-workspace/OopsProject/Inventory.json");
+	 Inventory inventory=objectMapper.readValue(rice, Inventory.class);
+	 System.out.println("rice name "+inventory.getName());
+	
+}
+}

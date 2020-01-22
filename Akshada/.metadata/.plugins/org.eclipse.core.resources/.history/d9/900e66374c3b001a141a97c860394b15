@@ -1,0 +1,47 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+//import com.sun.tools.javac.util.List;
+
+public class InventoryImplementation implements InventoryInterface
+{
+	Scanner sc=new Scanner(System.in);
+List<Inventory>ls=new ArrayList<Inventory>();
+ObjectMapper objectMapper = new ObjectMapper();
+File rice =new File("/home/admin1/eclipse-workspace/OopsProject/Inventory.json");
+
+@Override
+public Inventory addinventory() {
+	 Inventory inventory=new Inventory();
+	  System.out.println("enter the name of product");
+	  inventory.setName(sc.next());
+	  System.out.println("enter the price");
+	  inventory.setPrice(sc.nextDouble());
+	  System.out.println("enter the weight");
+	  inventory.setWeight(sc.nextDouble());
+	return inventory;
+	  
+}
+
+@Override
+public Inventory totalWeight() 
+{
+	
+	return null;
+}
+@Override
+public Inventory totalPrice() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+
+  
+	
+}

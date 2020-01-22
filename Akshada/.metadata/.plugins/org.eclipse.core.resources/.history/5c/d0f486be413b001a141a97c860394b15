@@ -1,0 +1,13 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class InventoryMain 
+{
+ public static void main(String[] args) 
+ {
+	 ObjectMapper objectMapper = new ObjectMapper();
+	 
+	
+}
+}

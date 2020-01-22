@@ -1,0 +1,14 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+import java.util.List;
+
+public class BookImplementation 
+{
+	List<Person>personlist;
+  public  void adduser()
+  {
+	  AdressBookImplementation a1=new  AdressBookImplementation();
+	  personlist=AdressUtility.readfile(openfile);
+	  
+  }
+}

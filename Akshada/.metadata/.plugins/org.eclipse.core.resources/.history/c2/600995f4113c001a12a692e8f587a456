@@ -1,0 +1,59 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+public class Person {
+	String firstName;
+	String LastName;
+	String adress;
+	String city;
+	int zip;
+	long phone_no;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public int getZip() {
+		return zip;
+	}
+
+	public void setZip(int zip) {
+		this.zip = zip;
+	}
+
+	public long getPhone_no() {
+		return phone_no;
+	}
+
+	public void setPhone_no(long phone_no) {
+		this.phone_no = phone_no;
+	}
+
+}

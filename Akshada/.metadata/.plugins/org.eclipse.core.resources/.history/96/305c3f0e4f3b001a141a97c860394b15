@@ -1,0 +1,11 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+public interface InventoryInterface
+{
+	 Inventory addinventory();
+	Inventory totalWeight();
+	Inventory totalPrice();
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package Com.BridgeLabz.Fellowship.Oops;
+
+import java.util.List;
+
+public interface InventoryInterface
+{
+	 
+	
+
+	List<Inventory> addinventory(List<Inventory> list);
+	//double totalWeight(List<Inventory> list);
+	
+	
+
+}

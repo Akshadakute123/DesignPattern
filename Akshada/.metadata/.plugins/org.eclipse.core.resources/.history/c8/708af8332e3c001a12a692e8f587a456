@@ -1,0 +1,21 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+import java.util.ArrayList;
+
+public class Bookmain 
+{
+	ArrayList<Person>personlist;
+    public void operations(String openfile)
+    {
+  	  AdressBookImplementation a1=new AdressBookImplementation();
+  	  int ch;
+  	  do
+  	  {
+  		  System.out.println("enter your choice");
+  		  System.out.println("1 to add user");
+  		  System.out.println("2 to delete user");
+  		  
+  		  
+  	  }while;
+
+}

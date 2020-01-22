@@ -1,0 +1,33 @@
+package Com.BridgeLabz.Fellowship.Oops.AdressBook;
+
+public class AdressBook
+{
+	String adress;
+	String city;
+	int zip;
+	public String getAdress() {
+		return adress;
+	}
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public int getZip() {
+		return zip;
+	}
+	public void setZip(int zip) {
+		this.zip = zip;
+	}
+	public long getPhone_no() {
+		return phone_no;
+	}
+	public void setPhone_no(long phone_no) {
+		this.phone_no = phone_no;
+	}
+	long phone_no;
+}

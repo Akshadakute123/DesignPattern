@@ -1,0 +1,14 @@
+package com.Bridgelabz.oops.Inventory;
+
+import java.io.File;
+import java.util.List;
+
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
+
+import Com.bridgelabz.oops.stock.Stockmgt;
+
+public class test {
+ObjectMapper mapper=new ObjectMapper();
+List<Stockmgt> list=mapper.readValue(new File("/home/admin1/eclipse-workspace/OopsProject/src/Com/bridgelabz/oops/stock/Stockmgte.json"), new TypeReference<List<Stockmgt>>(){});
+}
